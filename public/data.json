@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/M80wgjc/c1.jpg",
+    "category_title": "Conferences and Seminars",
+    "background_color": "#3498db",
+    "description": "Immerse your audience in a world of knowledge and networking with our expertly curated Conferences and Seminars. Discover cutting-edge insights, engage with industry thought leaders, and foster meaningful connections in an atmosphere designed for intellectual exploration and collaborative learning. Our meticulously planned events ensure seamless experiences, empowering attendees to gain valuable insights, forge partnerships, and stay at the forefront of their fields. Join us and elevate your professional journey through our thought-provoking Conferences and Seminars.",
+    "price": 15000.0,
+    "rating": 4.5
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/ygYpqN0/c2.jpg",
+    "category_title": "Trade Shows and Expos",
+    "background_color": "#e67e22",
+    "description": "Dive into the heart of innovation and business opportunities with our vibrant Trade Shows and Expos. Experience a dynamic showcase of the latest products, services, and technologies, all under one roof. Our Trade Shows and Expos offer a unique platform for businesses to exhibit their innovations, connect with industry leaders, and engage with a diverse audience. Whether you're an exhibitor looking to expand your reach or an attendee seeking inspiration, our events provide an immersive environment where ideas flourish, collaborations spark, and businesses thrive. Explore limitless possibilities and forge valuable connections at our Trade Shows and Expos.",
+    "price": 18000.0,
+    "rating": 4.9
+  },
+
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/q5PftFx/c3.jpg",
+    "category_title": "Team Building Workshops",
+    "background_color": "#e74c3c",
+    "description": "Elevate teamwork, boost morale, and enhance productivity with our engaging Team Building Workshops. Designed to inspire collaboration and foster a positive workplace culture, our workshops offer interactive activities, strategic games, and insightful discussions. Through tailored exercises, participants develop essential communication skills, trust, and mutual understanding among team members. Our Team Building Workshops go beyond the ordinary, encouraging creativity, problem-solving, and effective teamwork. Join us for an empowering experience that strengthens bonds, nurtures leadership, and transforms individuals into cohesive, high-performing teams",
+    "price": 8000.0,
+    "rating": 4.8
+  },
+
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/xGp4PY0/c4.jpg",
+    "category_title": "Product Launches",
+    "background_color": "#3498db",
+    "description": "Unveil your innovation with a grand flourish at our expertly orchestrated Product Launches. Our events provide the perfect stage to introduce your latest products and services to the world. With meticulous planning and attention to detail, we create an atmosphere of anticipation and excitement, ensuring your brand captivates the audience. From impressive product presentations to immersive brand experiences, our Product Launch events are designed to leave a lasting impression. Join us to elevate your product unveiling, turning it into a memorable and impactful moment that resonates with your audience, partners, and stakeholders.",
+    "price": 15000.0,
+    "rating": 4.7
+  },
+
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/tLgz6J4/c5.jpg",
+    "category_title": "Corporate Meetings",
+    "background_color": "#e74c3c",
+    "description": "Streamline your corporate communications and decision-making with our tailored Corporate Meetings services. We specialize in orchestrating seamless and productive meetings, ensuring that your team can focus on what matters most – the agenda at hand. From intimate executive board meetings to large-scale strategy sessions, our expert event planning team handles all the logistics. We create an environment conducive to meaningful discussions, brainstorming, and strategic planning. With meticulous attention to detail, we ensure every aspect of your meeting is flawlessly executed, allowing your team to collaborate effectively and achieve your business objectives. Elevate your corporate discussions with our professional meeting management services.",
+    "price": 5000.0,
+    "rating": 4.2
+  },
+
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/JB3VFrx/c6.jpg",
+    "category_title": "Award Ceremonies",
+    "background_color": "#9b59b6",
+    "description": "Celebrate excellence and honor outstanding achievements with our meticulously curated Award Ceremonies. We specialize in creating elegant, memorable events that recognize and reward excellence in various fields. From corporate achievements to industry milestones, our ceremonies are designed to inspire, uplift, and motivate. Our expert team handles every detail, from venue selection to customized awards, ensuring a seamless and prestigious experience. Whether you're acknowledging employee accomplishments, business innovations, or community contributions, our Award Ceremonies provide a platform to shine a spotlight on deserving individuals and organizations. Join us in creating unforgettable moments of recognition and celebration.",
+    "price": 10000.0,
+    "rating": 4.6
+  }
+]
