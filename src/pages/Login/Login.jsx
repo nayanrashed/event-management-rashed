@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const {signIn,signInWithGoogle}= useContext(AuthContext);
@@ -22,7 +24,7 @@ const Login = () => {
         .then(result=>{
             console.log(result.error)
             navigate(location?.state?location.state:'/')
-            return alert('login Successful')
+            return toast("Wow so easy !");
         })
         .catch(error=>{
             console.error(error)
@@ -34,6 +36,7 @@ const Login = () => {
       .then(result=>{
         navigate('/');
         console.log(result.user)
+        toast("Wow so easy !");
       })
       .catch(error=>{
         console.error(error)
@@ -80,10 +83,12 @@ const Login = () => {
         }
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
+          <ToastContainer />
         </div>
         <p className="text-center">or</p>
         <p className="text-center">Login with <button onClick={handleGoogleSignIn} className="btn btn-ghost">Google</button></p>
       </form>
+      
       <p className="text-center">Do not have an account? <Link to='/register' className="text-red-400 font-bold">Register</Link> </p>
     </div>
   );
