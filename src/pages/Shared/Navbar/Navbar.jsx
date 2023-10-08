@@ -9,9 +9,10 @@ const Navbar = () => {
   const handleSignOut=()=>{
     logOut()
     .then()
-    .catch()
-    
+    .catch()    
   }
+  console.log(user?.email);
+
   const navLinks = (
     <>
       <li>
@@ -68,7 +69,9 @@ const Navbar = () => {
           <div className="w-10 rounded-full">
             <img src={userDefPic} />
           </div>
-        </label>
+        </label>{
+          user&& <p className="px-2">{user?.email}</p>
+        }
         {user ? (
           <button onClick={handleSignOut} className="btn">Sign Out</button>
         ) : (
