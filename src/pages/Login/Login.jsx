@@ -17,18 +17,19 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password')
         console.log(email,password);
-
+        
         setError("");
         
         signIn(email,password)
         .then(result=>{
             console.log(result.error)
-            navigate(location?.state?location.state:'/')
-            return toast("Wow so easy !");
+            toast("Login Successful")
+            navigate(location?.state?location.state:'/')            
         })
         .catch(error=>{
             console.error(error)
             setError(error.message)
+            toast("Invalid Email or Password")
         })
     }
     const handleGoogleSignIn=()=>{
@@ -88,7 +89,7 @@ const Login = () => {
         <p className="text-center">or</p>
         <p className="text-center">Login with <button onClick={handleGoogleSignIn} className="btn btn-ghost">Google</button></p>
       </form>
-      
+      <ToastContainer />
       <p className="text-center">Do not have an account? <Link to='/register' className="text-red-400 font-bold">Register</Link> </p>
     </div>
   );

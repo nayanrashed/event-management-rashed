@@ -1,9 +1,11 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
-  const { createUser } = useContext(AuthContext);
+  const {user, createUser } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [registrationError, setRegistrationError]= useState("");
   const navigate = useNavigate();
@@ -30,12 +32,14 @@ const Register = () => {
           console.log(result.user);
           e.target.reset();
           navigate('/');
-          return alert("registration successful");
+          
         })
         .catch((error) => {
           console.error(error);
           setRegistrationError(error.message);
+          toast("Please check your email or password");
         });
+        
     }
   };
   return (
@@ -91,6 +95,7 @@ const Register = () => {
           <button className="btn btn-primary">Register</button>
         </div>
       </form>
+      <ToastContainer />
       <p className="text-center">
         Have an account?{" "}
         <Link to="/login" className="text-red-400 font-bold">

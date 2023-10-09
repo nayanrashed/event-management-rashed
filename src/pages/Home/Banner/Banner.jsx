@@ -1,27 +1,71 @@
-import bannerPicture from '../../../assets/ban1.jpg'
+import bannerPicture1 from "../../../assets/ban1.jpg";
+import bannerPicture2 from "../../../assets/ban2.jpg";
+import bannerPicture3 from "../../../assets/ban3.jpg";
+import bannerPicture4 from "../../../assets/ban4.jpg";
 
 const Banner = () => {
   return (
-    <div>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className='w-1/2'>
+    <div className="relative w-full h-[80vh]">
+      
+      <div className="carousel w-full h-[80vh]">
+        <div id="slide1" className="carousel-item relative w-full">
           <img
-            src={bannerPicture}
-            className="rounded-lg shadow-2xl w-full"
+            src={bannerPicture1}
+            className="w-full"
           />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide2" className="btn btn-circle">
+              ❯
+            </a>
           </div>
-          <div className='w-1/2'>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">Get Started</button>
+        </div>
+        <div id="slide2" className="carousel-item relative w-full">
+          <img
+            src={bannerPicture2}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide3" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide3" className="carousel-item relative w-full">
+          <img
+            src={bannerPicture3}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide4" className="btn btn-circle">
+              ❯
+            </a>
+          </div>
+        </div>
+        <div id="slide4" className="carousel-item relative w-full">
+          <img
+            src={bannerPicture4}
+            className="w-full"
+          />
+          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" className="btn btn-circle">
+              ❮
+            </a>
+            <a href="#slide1" className="btn btn-circle">
+              ❯
+            </a>
           </div>
         </div>
       </div>
+      <div className="p-10 absolute left-1/4 mx-auto top-1/3 text-white"  ><p className="text-3xl text-center">A Bespoke Event Planning Service in Bangladesh</p></div>
     </div>
   );
 };

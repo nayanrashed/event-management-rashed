@@ -5,13 +5,12 @@ import { useContext } from "react";
 import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
-  const { user, logOut} = useContext(AuthContext);
-  const handleSignOut=()=>{
-    logOut()
-    .then()
-    .catch()    
-  }
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
   console.log(user?.email);
+  console.log(user?.photoURL);
 
   const navLinks = (
     <>
@@ -30,7 +29,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-gray-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,17 +64,18 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div className="w-10 rounded-full">
-            <img src={userDefPic} />
-          </div>
-        </label>{
-          user&& <p className="px-2">{user?.email}</p>
-        }
+        {user?.photoURL ? (
+          <img className="rounded-full w-10" src={user?.photoURL} />
+        ) : (user&&
+          <img className="rounded-full w-10" src={userDefPic} />
+        )}
+        {user && <p className="px-2">{user?.email}</p>}
         {user ? (
-          <button onClick={handleSignOut} className="btn">Sign Out</button>
+          <button onClick={handleSignOut} className="btn">
+            Sign Out
+          </button>
         ) : (
-          <Link to='/login' className="btn">
+          <Link to="/login" className="btn">
             <button>Login</button>
           </Link>
         )}

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 const ServiceCard = ({ service }) => {
   const { id, picture, category_title, description, price, rating } = service;
   return (
-    <div className="mx-auto my-8">
-      <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
+    <div className="mx-auto my-8" data-aos="fade-down">
+      <div className="relative flex w-96 flex-col rounded-xl bg-gray-200 bg-clip-border text-gray-700 shadow-xl shadow-yellow-400/50 ">
         <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
-          <img src={picture} alt="picture" />
+          <img className="w-full h-full" src={picture} alt="picture" />
         </div>
         <div className="p-6">
           <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">

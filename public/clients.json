@@ -1,38 +1,45 @@
 [
-  {
-    "id": 1,
-    "client_name": "ABC Corporation",
-    "comments": "Exceptional services! The event was flawlessly organized, and the attention to detail was impressive.",
-    "rating": 4.9
-  },
-  {
-    "id": 2,
-    "client_name": "XYZ Enterprises",
-    "comments": "Highly professional team! The event exceeded our expectations, and the creative ideas were outstanding.",
-    "rating": 4.8
-  },
-  {
-    "id": 3,
-    "client_name": "LMN Industries",
-    "comments": "Great communication and collaboration. The event management team was responsive and proactive throughout the process.",
-    "rating": 4.7
-  },
-  {
-    "id": 4,
-    "client_name": "PQR Limited",
-    "comments": "Impressed with the creativity and innovation. The thematic decor and entertainment were a big hit with our attendees.",
-    "rating": 4.6
-  },
-  {
-    "id": 5,
-    "client_name": "EFG Solutions",
-    "comments": "Reliable and efficient services. The event ran smoothly, and the staff was courteous and professional.",
-    "rating": 4.5
-  },
-  {
-    "id": 6,
-    "client_name": "RST Group",
-    "comments": "Exceptional event planning expertise! Our product launch was a huge success, thanks to the dedicated team.",
-    "rating": 4.9
-  }
-]
+    {
+      "id": 1,
+      "client_name": "ABC Corporation",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Exceptional services! The event was flawlessly organized, and the attention to detail was impressive.",
+      "rating": 4.9
+    },
+    {
+      "id": 2,
+      "client_name": "XYZ Enterprises",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Highly professional team! The event exceeded our expectations, and the creative ideas were outstanding.",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "client_name": "LMN Industries",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Great communication and collaboration. The event management team was responsive and proactive throughout the process.",
+      "rating": 4.7
+    },
+    {
+      "id": 4,
+      "client_name": "PQR Limited",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Impressed with the creativity and innovation. The thematic decor and entertainment were a big hit with our attendees.",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "client_name": "EFG Solutions",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Reliable and efficient services. The event ran smoothly, and the staff was courteous and professional.",
+      "rating": 4.5
+    },
+    {
+      "id": 6,
+      "client_name": "RST Group",
+      "picture": "https://i.ibb.co/kVn52H5/avatar-369-456321.webp",
+      "comments": "Exceptional event planning expertise! Our product launch was a huge success, thanks to the dedicated team.",
+      "rating": 4.9
+    }
+  ]
+  
