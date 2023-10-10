@@ -1,6 +1,6 @@
 const Career = () => {
   return (
-    <div className="w-full bg-gray-200 px-16 py-8">
+    <div className="w-full bg-gray-200 px-16 py-8 my-4 rounded-lg">
       <h2 className="text-xl font-semibold py-6">
         Explore Your Future with BlackDot Events
       </h2>
@@ -44,7 +44,7 @@ const Career = () => {
         If you are passionate about events, creativity, and delivering
         exceptional experiences, we want to hear from you. To apply, please send
         your resume and a cover letter detailing your relevant experience and
-        why you want to work with BlackDot Events to [Email Address]. Be sure to
+        why you want to work with BlackDot Events to [career@blackdot.com]. Be sure to
         specify the position you are applying for in the subject line. Join us
         at BlackDot Events and be a part of a team that transforms visions into
         extraordinary events!
