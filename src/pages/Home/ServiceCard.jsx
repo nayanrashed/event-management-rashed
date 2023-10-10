@@ -8,7 +8,7 @@ const ServiceCard = ({ service }) => {
   return (
     <div className="mx-auto my-8" data-aos="fade-down">
       <div className="relative flex md:w-80 lg:w-96 flex-col rounded-xl bg-gray-200 bg-clip-border text-gray-700 shadow-xl shadow-amber-400/50 ">
-        <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+        <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl  bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <img className="w-full h-full" src={picture} alt="picture" />
         </div>
         <div className="p-6">

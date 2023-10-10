@@ -40,7 +40,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-gray-100">
+    <div className="navbar bg-amber-400 rounded-b-sm md:bg-gray-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -66,8 +66,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        {/* <a className="btn btn-ghost normal-case text-xl">blackdot</a> */}
-        <Link to='/'>
+        <Link to="/">
           <img className="w-24 md:w-36" src={logo} alt="" />
         </Link>
       </div>
@@ -75,20 +74,22 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
+      {/* {user?.photoURL && 
+          <img className="rounded-full w-6 md:w-10" src={user?.photoURL} />} */}
         {user?.photoURL ? (
           <img className="rounded-full w-6 md:w-10" src={user?.photoURL} />
         ) : (
           user && <img className="rounded-full w-6 md:w-10" src={userDefPic} />
         )}
         {user && (
-          <p className="px-1 md:px-2 md:text-lg text-xs">{user?.email}</p>
+          <p className="hidden md:inline px-1 md:px-1 md:text-lg text-xs">{user?.email}</p>
         )}
         {user ? (
-          <button onClick={handleSignOut} className="btn">
+          <button onClick={handleSignOut} className="btn btn-sm md:btn-outline bg-gray-200">
             Sign Out
           </button>
         ) : (
-          <Link to="/login" className="btn">
+          <Link to="/login" className="btn btn-sm md:btn-outline bg-gray-200">
             <button>Login</button>
           </Link>
         )}

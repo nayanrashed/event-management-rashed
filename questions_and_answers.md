@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: ?
 
-<i>first we declare a variable using let then assign {} to this variable. </i>
+<i>first we declare a variable using let then assign {} to this variable. so the answer will be {} </i>
 
 </p>
 </details>

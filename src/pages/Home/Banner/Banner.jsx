@@ -56,7 +56,7 @@ const Banner = () => {
       <div className="flex justify-center items-center w-3/4 h-[80vh] absolute top-0 text-white">
         <div>
           {/* <p className="text-center">blackdot</p> */}
-          <img className="w-1/4 mx-auto border rounded-lg bg-slate-200 bg-opacity-20" src={logo} alt="" />
+          <img className="w-1/3 rounded-sm md:w-1/4 mx-auto border md:rounded-lg bg-slate-200 bg-opacity-20" src={logo} alt="" />
           <p className="md:text-3xl text-center">
             A Bespoke Event Planner in Bangladesh
           </p>
