@@ -2,7 +2,8 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
+
 
 const Login = () => {
     const {signIn,signInWithGoogle}= useContext(AuthContext);
@@ -23,13 +24,23 @@ const Login = () => {
         signIn(email,password)
         .then(result=>{
             console.log(result.error)
-            toast("Login Successful")
+            Swal.fire({
+              title: 'Great!',
+              text: 'Login Successful',
+              icon: 'success',
+              confirmButtonText: 'Cool'
+            })
             navigate(location?.state?location.state:'/')            
         })
         .catch(error=>{
             console.error(error)
             setError(error.message)
-            toast("Invalid Email or Password")
+            Swal.fire({
+              title: 'Error!',
+              text: 'Wrong email or password',
+              icon: 'error',
+              confirmButtonText: 'Ok'
+            })
         })
     }
     const handleGoogleSignIn=()=>{

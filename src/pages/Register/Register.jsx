@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
 
 const Register = () => {
   const {user, createUser } = useContext(AuthContext);
@@ -32,12 +32,23 @@ const Register = () => {
           console.log(result.user);
           e.target.reset();
           navigate('/');
+          Swal.fire({
+            title: 'Great!',
+            text: 'Registration Successful',
+            icon: 'success',
+            confirmButtonText: 'Cool'
+          })
           
         })
         .catch((error) => {
           console.error(error);
           setRegistrationError(error.message);
-          toast("Please check your email or password");
+          Swal.fire({
+            title: 'Error!',
+            text: 'Wrong email or password',
+            icon: 'error',
+            confirmButtonText: 'Ok'
+          })
         });
         
     }

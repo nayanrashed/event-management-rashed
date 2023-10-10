@@ -24,7 +24,18 @@ const Navbar = () => {
         <NavLink to="/career">Career</NavLink>
       </li>
       <li>
+        <NavLink to="/register">Register</NavLink>
+      </li>
+      <li>
         <NavLink to="/login">Login</NavLink>
+      </li>
+      <li>
+        <NavLink
+          className="border bg-amber-400 text-black font-semibold"
+          to="/getquote"
+        >
+          Get A Quote
+        </NavLink>
       </li>
     </>
   );
@@ -56,8 +67,8 @@ const Navbar = () => {
           </ul>
         </div>
         {/* <a className="btn btn-ghost normal-case text-xl">blackdot</a> */}
-        <Link>
-          <img className="w-36" src={logo} alt="" />
+        <Link to='/'>
+          <img className="w-24 md:w-36" src={logo} alt="" />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -65,11 +76,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         {user?.photoURL ? (
-          <img className="rounded-full w-10" src={user?.photoURL} />
-        ) : (user&&
-          <img className="rounded-full w-10" src={userDefPic} />
+          <img className="rounded-full w-6 md:w-10" src={user?.photoURL} />
+        ) : (
+          user && <img className="rounded-full w-6 md:w-10" src={userDefPic} />
         )}
-        {user && <p className="px-2">{user?.email}</p>}
+        {user && (
+          <p className="px-1 md:px-2 md:text-lg text-xs">{user?.email}</p>
+        )}
         {user ? (
           <button onClick={handleSignOut} className="btn">
             Sign Out

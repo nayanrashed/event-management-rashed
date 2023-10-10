@@ -7,12 +7,15 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Service from "../pages/Service/Service";
 import PrivateRoute from "./PrivateRoute";
+import GetQuote from "../pages/GetQuote/GetQuote";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement:<ErrorPage></ErrorPage>,
       children:[
         {
             path:"/",
@@ -25,7 +28,7 @@ const router = createBrowserRouter([
         },
         {
             path:"/career",
-            element:<Career></Career>
+            element:<PrivateRoute><Career></Career></PrivateRoute>,
         },
         {
             path:"/login",
@@ -34,6 +37,10 @@ const router = createBrowserRouter([
         {
             path:"/register",
             element:<Register></Register>
+        },
+        {
+            path:"/getquote",
+            element:<PrivateRoute><GetQuote></GetQuote></PrivateRoute>,
         },
         {
             path:"/service/:id",

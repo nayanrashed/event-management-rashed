@@ -19,19 +19,19 @@ const WorkProfile = () => {
         <div data-aos="zoom-out-left">
           <img className="h-[50vh] w-full rounded-sm" src={work2} alt="" />
           <p className="text-white text-2xl font-semibold text-center ">
-            Dhaka International Trade Fair 2022
+            Education Summit, Dhaka University
           </p>
         </div>
         <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <img className="h-[50vh] w-full rounded-sm" src={work3} alt="" />
           <p className="text-white text-2xl font-semibold text-center ">
-            Dhaka International Trade Fair 2022
+            Conference of Investors in Garments Sector
           </p>
         </div>
         <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <img className="h-[50vh] w-full rounded-sm" src={work4} alt="" />
           <p className="text-white text-2xl font-semibold text-center ">
-            Dhaka International Trade Fair 2022
+            World Young Leaders Summit, Dhaka
           </p>
         </div>
       </div>

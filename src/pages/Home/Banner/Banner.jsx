@@ -2,6 +2,7 @@ import bannerPicture1 from "../../../assets/ban1.jpg";
 import bannerPicture2 from "../../../assets/ban2.jpg";
 import bannerPicture3 from "../../../assets/ban3.jpg";
 import bannerPicture4 from "../../../assets/ban4.jpg";
+import logo from '../../../assets/logo.png'
 
 const Banner = () => {
   return (
@@ -52,11 +53,12 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center border w-3/4 h-[80vh] absolute top-0 text-white">
+      <div className="flex justify-center items-center w-3/4 h-[80vh] absolute top-0 text-white">
         <div>
-          <p>blackdot</p>
+          {/* <p className="text-center">blackdot</p> */}
+          <img className="w-1/4 mx-auto border rounded-lg bg-slate-200 bg-opacity-20" src={logo} alt="" />
           <p className="md:text-3xl text-center">
-            A Bespoke Event Planning Service in Bangladesh
+            A Bespoke Event Planner in Bangladesh
           </p>
         </div>
       </div>
