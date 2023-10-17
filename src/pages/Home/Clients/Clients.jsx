@@ -4,12 +4,12 @@ import avatar2 from "../../../assets/avatar2.png";
 import Marquee from "react-fast-marquee";
 const Clients = () => {
   return (
-    <div className="py-4">
+    <div className="py-4 overflow-x-hidden">
       <h2 className="text-4xl my-8 text-center text-white font-semibold">
         Our Happy Clients
       </h2>
 
-      <div className="">
+      <div className="overflow-x-hidden">
         <Marquee pauseOnHover={true}>
           <div className="w-72 h-96 shadow-xl shadow-yellow-400/50 px-4 py-6 border rounded-lg flex flex-col mx-4 bg-gray-200 ">
             <img className="rounded-full w-20 mx-auto" src={avatar1} alt="" />
