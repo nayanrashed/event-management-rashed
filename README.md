@@ -1,3 +1,4 @@
+# this project was completed as an assignment for a web development course organized by PHero.
 # Project features
 - Using of firebase: Here we use firebase for email and password authentication.
 - Google Login: In this project we also provide option for Google Login.
